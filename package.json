@@ -10,6 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
     "react": "^18.2.0",
     "react-aria": "^3.31.0",
     "react-aria-components": "^1.0.0",
