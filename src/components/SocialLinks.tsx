@@ -1,5 +1,5 @@
 import { Link } from "react-aria-components";
-import resume from "../assets/resume.pdf";
+// import resume from "../assets/resume.pdf";
 
 const SocialLinks = () => {
   return (
