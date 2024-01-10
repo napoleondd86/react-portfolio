@@ -2,17 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --mypink: #cd9c7b;
+  --finn: #653050;
+  --raffia: #e9e0b5;
+  --chromewhite: #ddf1d3;
+  --nevada: #5c686f;
+  --xanadu: #7d847d;
+  --coraltree: #ab6465;
+  --rainee: #bbc5ac;
+  --sepiaskin: #965a43;
+  margin-top: 0px;
+}
 
 #root {
+  /* font-family: 'Roboto Mono', monospace; */
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
   line-height: 1.5;
   font-weight: 400;
   padding: 0;
-  margin: 0;
+  margin: 0px;
+  margin-top: 0;
   max-width: 100vw;
   ;
 
- 
+
   /* color-scheme: light dark; */
   /* color: rgba(255, 255, 255, 0.87); */
   /* background-color: #242424; */
@@ -26,19 +41,20 @@
 .nav-link {
   
   &[data-hovered] {
-    color: orange;
-    text-decoration-style: wavy;
-    box-shadow: inset 0 -2px 0 0 #646cff;
+    color: var(--finn);
+    /* text-decoration-style: underline; */
+    box-shadow: 0px 0px .75rem .75rem #6530504c;
+    border-radius: 1.5rem;
   }
 
   &[data-pressed] {
     border-radius: 100%;
-    border: 2px solid red;
+    border: 2px solid var(--finn);
   }
 }
 
 h2 {
-  color: orange;
+  color: var(--finn);
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 1.2;
@@ -49,6 +65,7 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
