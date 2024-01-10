@@ -2,15 +2,14 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
-import Footer from './components/Footer'
-import Navbar from './components/Navbar'
-import Splash from './components/Splash'
-import About from './components/About'
-import Projects from './components/Projects'
-import Contact from './components/Contact'
-import SocialLinks from './components/SocialLinks'
-import Services from './components/Services'
-
+import Footer from './components/Footer.tsx'
+import Navbar from './components/Navbar.tsx'
+import Splash from './components/Splash.tsx'
+import About from './components/About.tsx'
+import Projects from './components/Projects.tsx'
+import Contact from './components/Contact.tsx'
+import SocialLinks from './components/SocialLinks.tsx'
+import Services from './components/Services.tsx'
 function App() {
   // const [count, setCount] = useState(0)
 
