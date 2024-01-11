@@ -18,7 +18,7 @@
 #root {
   /* font-family: 'Roboto Mono', monospace; */
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-
+  text-align: center;
   line-height: 1.5;
   font-weight: 400;
   padding: 0;
