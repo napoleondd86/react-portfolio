@@ -1,6 +1,6 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
 :root {
   --mypink: #cd9c7b;
@@ -44,6 +44,7 @@
     /* text-decoration-style: underline; */
     box-shadow: 0px 0px .75rem .75rem #6530504c;
     border-radius: 1.5rem;
+
   }
 
   &[data-pressed] {
@@ -64,6 +65,8 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
+
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

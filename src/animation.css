@@ -1,0 +1,27 @@
+/* start of services animation  */
+
+.fadeInLeft {
+  opacity: 0;
+  transform: translateX(-200px);   
+  transition: opacity 1.2s, transform 1.5s;
+}
+
+.fadeInRight {
+  opacity: 0;
+  transform: translateX(200px);   
+  transition: opacity 1.2s, transform 1.5s;
+}
+
+.fadeInTop {
+  opacity: 0;
+  transform: translateY(-200px);   
+  transition: opacity 1.2s, transform 1.5s;
+}
+
+.startAnimation {
+  opacity: 1;
+  transform: translateX(0px);   
+}
+
+
+/* end of services animation  */

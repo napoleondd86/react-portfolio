@@ -16,7 +16,7 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <main className='splash mt-16 bg-bgtopo1 bg-cover bg-center bg-fixed'>
+    <main className='splash mt-16 bg-bgtopo1 bg-cover bg-center bg-fixed flex flex-col justify-center items-center'>
    
       <Navbar />
       <Splash >

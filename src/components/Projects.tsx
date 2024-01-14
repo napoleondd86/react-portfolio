@@ -1,6 +1,6 @@
 const Projects = () => {
   return (
-    <section id="projects" className="projects_container border-2 border-orange-600 m-2 p-4">
+    <section id="projects" className="border-2 rounded-3xl bg-rainee bg-opacity-60 border-finn mx-4 p-4 justify-center items-center flex flex-col max-w-7xl mt-16">
 
       <h2>Projects</h2>
       <div className="project">
