@@ -1,7 +1,7 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, RefObject } from 'react';
 
-const useOnScreen = (options) => {
-  const ref = useRef();
+const useOnScreen = (options: IntersectionObserverInit): [RefObject<HTMLDivElement>, boolean] => {
+  const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
