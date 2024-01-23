@@ -13,6 +13,18 @@
   --rainee: #bbc5ac;
   --sepiaskin: #965a43;
   margin-top: 0px;
+
+  --walnut:#5A3A22;
+  --walnutLight:#7D5A3A;
+  --walnutDark:#3A2417;
+  --birch: #E9E0B5;
+  --birchLight: #F5F1E6;
+  --birchDark: #C9B38C;
+  --secondaryOrange:#FFA500;
+  --secondaryYellow: #FFD700;
+  --accent:#2E8B57;
+  --background: #F5F5F5;
+  --highlight: #007BFF;
 }
 
 #root {
@@ -60,16 +72,14 @@ main {
 }
 
 h2 {
-  color: var(--finn);
+  color: var(--secondaryOrange);
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 1.2;
 }
 
 h1 {
-  color: #000000;
-  font-size: 3.2em;
-  line-height: 1.1;
+  
 }
 
 /* background overlay start */
@@ -90,6 +100,90 @@ h1 {
   background-position: center;
   z-index: -1;
 }
+
+/* start of sawblade animation */
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Additional styling */
+}
+
+.social-logo, .sawblade-logo {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s;
+}
+
+.sawblade-logo {
+  animation: spin 5s ease-in-out infinite;
+}
+
+
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(-1800deg);
+  }
+}
+/* end of sawblade animation */
+
+/* start of sawdust animation */
+.social-link {
+  position: relative;
+}
+
+.sawdust-animation {
+  display: none;
+  position: absolute;
+  /* Position it right below the SVG */
+}
+
+.social-link:hover .sawdust-animation {
+  display: block;
+}
+
+.pebble {
+  width: 5px;
+  height: 5px;
+  background-color: var(--walnut); /* or any color */
+  border-radius: 50%;
+  position: absolute;
+  animation: fall 5s infinite, accumulate 5s forwards;
+}
+
+@keyframes fall {
+  0% { top: 0; }
+  100% { top: 300px; /* or however far you want it to fall */ }
+}
+
+@keyframes accumulate {
+  /* Define how you want them to stack up */
+}
+
+/* end of sawdust animation */
+
+
+.victorian-molding {
+  height: 40px; /* Adjust based on your preference */
+  background-color: var(--birchLight); /* A base color that matches the Victorian style */
+  box-shadow: 
+    0 -4px 5px -5px #969393, /* Upper shadow */
+    0 4px 5px -5px #6d6b6b, /* Lower shadow */
+    inset 0 -1px 2px #5e5c5c, /* Top inner shadow for depth */
+    inset 0 1px 2px #7a7878; /* Bottom inner shadow for depth */
+
+}
+
+
+
+
+
+/* Add styling for .social-text as needed */
+
 
 /* background overlay end  */
 

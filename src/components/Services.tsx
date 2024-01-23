@@ -9,7 +9,7 @@ const Services = () => {
   const [setRef3, visible3] = useOnscreen({ threshold: 0.1 });
 
   return (
-    <div id="services" className="services_container rounded-3xl bg-rainee bg-opacity-60  mx-4 p-4 items-center flex flex-col max-w-7xl mt-16 justify-evenly">
+    <div id="services" className="services_container rounded-3xl mx-4 px-4 items-center flex flex-col max-w-7xl mx-16 justify-evenly">
    
       <h2 className=''>Services</h2>
       <div className=" flex justify-evenly gap-4 m-8 flex-wrap md:flex-nowrap">

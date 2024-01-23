@@ -747,6 +747,18 @@ select {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.inset-0 {
+  inset: 0px;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -759,9 +771,9 @@ select {
   margin: 2rem;
 }
 
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
+.mx-16 {
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 .mx-4 {
@@ -774,8 +786,12 @@ select {
   margin-bottom: 2rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .ml-4 {
@@ -788,6 +804,10 @@ select {
 
 .mt-16 {
   margin-top: 4rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .mt-4 {
@@ -890,48 +910,28 @@ select {
   border-radius: 9999px;
 }
 
-.border-4 {
-  border-width: 4px;
-}
-
-.border-finn {
-  --tw-border-opacity: 1;
-  border-color: rgb(101 48 80 / var(--tw-border-opacity));
-}
-
-.bg-cwhite {
+.bg-background {
   --tw-bg-opacity: 1;
-  background-color: rgb(221 241 211 / var(--tw-bg-opacity));
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }
 
-.bg-myorange {
+.bg-birchDark {
   --tw-bg-opacity: 1;
-  background-color: rgb(198 107 94 / var(--tw-bg-opacity));
+  background-color: rgb(201 179 140 / var(--tw-bg-opacity));
 }
 
-.bg-rainee {
+.bg-birchLight {
   --tw-bg-opacity: 1;
-  background-color: rgb(187 197 172 / var(--tw-bg-opacity));
+  background-color: rgb(245 241 230 / var(--tw-bg-opacity));
+}
+
+.bg-walnutLight {
+  --tw-bg-opacity: 1;
+  background-color: rgb(125 90 58 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-30 {
   --tw-bg-opacity: 0.3;
-}
-
-.bg-opacity-60 {
-  --tw-bg-opacity: 0.6;
-}
-
-.bg-bgsubtle {
-  background-image: url('/images/bg-subtle.png');
-}
-
-.bg-bgtopo8 {
-  background-image: url('/images/bg-topo8.png');
-}
-
-.bg-bgtopo6 {
-  background-image: url('/images/bg-topo6.png');
 }
 
 .bg-cover {
@@ -963,9 +963,33 @@ select {
   padding-right: 0.5rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
 .text-xl {
@@ -981,6 +1005,36 @@ select {
   font-weight: 600;
 }
 
+.text-secondaryOrange {
+  --tw-text-opacity: 1;
+  color: rgb(255 165 0 / var(--tw-text-opacity));
+}
+
+.text-walnutDark {
+  --tw-text-opacity: 1;
+  color: rgb(58 36 23 / var(--tw-text-opacity));
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 :root {
   --mypink: #cd9c7b;
   --finn: #653050;
@@ -992,6 +1046,17 @@ select {
   --rainee: #bbc5ac;
   --sepiaskin: #965a43;
   margin-top: 0px;
+  --walnut:#5A3A22;
+  --walnutLight:#7D5A3A;
+  --walnutDark:#3A2417;
+  --birch: #E9E0B5;
+  --birchLight: #F5F1E6;
+  --birchDark: #C9B38C;
+  --secondaryOrange:#FFA500;
+  --secondaryYellow: #FFD700;
+  --accent:#2E8B57;
+  --background: #F5F5F5;
+  --highlight: #007BFF;
 }
 
 #root {
@@ -1033,16 +1098,13 @@ main {
 }
 
 h2 {
-  color: var(--finn);
+  color: var(--secondaryOrange);
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 1.2;
 }
 
 h1 {
-  color: #000000;
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 /* background overlay start */
@@ -1060,12 +1122,101 @@ h1 {
   left: 0;
   background-image: url('/images/bg-topo1.png');
   /* Same path as in your Tailwind config */
-  opacity: 0.95;
+  opacity: 0.11;
   /* 10% opacity */
   background-size: cover;
   background-position: center;
   z-index: -1;
 }
+
+/* start of sawblade animation */
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Additional styling */
+}
+
+.social-logo, .sawblade-logo {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s;
+}
+
+.sawblade-logo {
+  animation: spin 5s ease-in-out infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-1800deg);
+  }
+}
+
+/* end of sawblade animation */
+
+/* start of sawdust animation */
+
+.social-link {
+  position: relative;
+}
+
+.sawdust-animation {
+  display: none;
+  position: absolute;
+  /* Position it right below the SVG */
+}
+
+.social-link:hover .sawdust-animation {
+  display: block;
+}
+
+.pebble {
+  width: 5px;
+  height: 5px;
+  background-color: var(--walnut);
+  /* or any color */
+  border-radius: 50%;
+  position: absolute;
+  animation: fall 5s infinite, accumulate 5s forwards;
+}
+
+@keyframes fall {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: 300px;
+    /* or however far you want it to fall */
+  }
+}
+
+@keyframes accumulate {
+  /* Define how you want them to stack up */
+}
+
+/* end of sawdust animation */
+
+.victorian-molding {
+  height: 40px;
+  /* Adjust based on your preference */
+  background-color: var(--birchLight);
+  /* A base color that matches the Victorian style */
+  box-shadow: 
+    0 -4px 5px -5px #969393, /* Upper shadow */
+    0 4px 5px -5px #6d6b6b, /* Lower shadow */
+    inset 0 -1px 2px #5e5c5c, /* Top inner shadow for depth */
+    inset 0 1px 2px #7a7878;
+  /* Bottom inner shadow for depth */
+}
+
+/* Add styling for .social-text as needed */
 
 /* background overlay end  */
 
@@ -1156,6 +1307,14 @@ button:focus-visible {
   display: none;
 }
 
+.group:hover .group-hover\:opacity-0 {
+  opacity: 0;
+}
+
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
+}
+
 @media (min-width: 640px) {
   .sm\:block {
     display: block;
@@ -1179,14 +1338,6 @@ button:focus-visible {
 }
 
 @media (min-width: 768px) {
-  .md\:h-24 {
-    height: 6rem;
-  }
-
-  .md\:w-24 {
-    width: 6rem;
-  }
-
   .md\:flex-nowrap {
     flex-wrap: nowrap;
   }
@@ -1194,15 +1345,5 @@ button:focus-visible {
   .md\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:h-28 {
-    height: 7rem;
-  }
-
-  .lg\:w-28 {
-    width: 7rem;
   }
 }
