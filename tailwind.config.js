@@ -26,9 +26,8 @@ export default {
         bgwatercolor: "url('/images/bg-watercolor.png')",
         bgwatercolor1: "url('/images/bg-watercolor1.png')",
         bgwatercolor2: "url('/images/bg-watercolor2.png')",
-        bgsubtle: "url('/images/bg-subtle.png')",
-        bgsubtle1: "url('/images/bg-subtle1.png')",
-        bgsubtle2: "url('/images/bg-subtle2.png')",
+        bgwoodgrain: "url('/images/bg-woodgrain.png')",
+        woodgrain: "url('/woodgrain.png')",
       
       },
       colors: {

@@ -1,6 +1,8 @@
-const Projects = () => {
+import React, { ForwardedRef } from 'react'
+
+const Projects = React.forwardRef(({/* future props */}, ref: ForwardedRef<HTMLDivElement>) => {
   return (
-    <section id="projects" className=" rounded-3xl bg-background p-4 justify-center items-center flex flex-col max-w-7xl mt-16">
+    <section ref={ref} id="projects" className=" rounded-3xl bg-background p-4 justify-center items-center flex flex-col max-w-7xl mt-16 px-20">
 
       <h2>Projects</h2>
       <div className="projects_container flex flex-row flex-wrap justify-evenly gap-4 " >
@@ -41,6 +43,6 @@ const Projects = () => {
       </div>
     </section>
   )
-}
+})
 
 export default Projects;

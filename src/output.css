@@ -794,6 +794,10 @@ select {
   margin-bottom: 5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .ml-4 {
   margin-left: 1rem;
 }
@@ -826,8 +830,12 @@ select {
   display: none;
 }
 
-.h-16 {
-  height: 4rem;
+.h-12 {
+  height: 3rem;
+}
+
+.h-14 {
+  height: 3.5rem;
 }
 
 .h-20 {
@@ -850,8 +858,8 @@ select {
   width: 3rem;
 }
 
-.w-16 {
-  width: 4rem;
+.w-14 {
+  width: 3.5rem;
 }
 
 .w-20 {
@@ -902,12 +910,28 @@ select {
   gap: 1rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
 }
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .bg-background {
@@ -932,6 +956,10 @@ select {
 
 .bg-opacity-30 {
   --tw-bg-opacity: 0.3;
+}
+
+.bg-woodgrain {
+  background-image: url('/woodgrain.png');
 }
 
 .bg-cover {
@@ -963,6 +991,11 @@ select {
   padding-right: 0.5rem;
 }
 
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -973,9 +1006,22 @@ select {
   padding-bottom: 6rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -1003,6 +1049,11 @@ select {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.text-accent {
+  --tw-text-opacity: 1;
+  color: rgb(46 139 87 / var(--tw-text-opacity));
 }
 
 .text-secondaryOrange {
@@ -1084,18 +1135,21 @@ main {
   min-height: 100vh;
 }
 
-.nav-link {
+/* .nav-link {
+  
   &[data-hovered] {
-    color: var(--finn);
-    /* text-decoration-style: underline; */
+    color: var(--accent);
+    text-decoration-style: underline; 
     box-shadow: 0px 0px .75rem .75rem #6530504c;
     border-radius: .75rem;
+
   }
+
   &[data-pressed] {
     border-radius: 100%;
     border: 2px solid var(--finn);
   }
-}
+} */
 
 h2 {
   color: var(--secondaryOrange);
@@ -1203,17 +1257,46 @@ h1 {
 
 /* end of sawdust animation */
 
-.victorian-molding {
-  height: 40px;
-  /* Adjust based on your preference */
-  background-color: var(--birchLight);
-  /* A base color that matches the Victorian style */
-  box-shadow: 
-    0 -4px 5px -5px #969393, /* Upper shadow */
-    0 4px 5px -5px #6d6b6b, /* Lower shadow */
-    inset 0 -1px 2px #5e5c5c, /* Top inner shadow for depth */
-    inset 0 1px 2px #7a7878;
-  /* Bottom inner shadow for depth */
+.bg-woodgrain-opacity {
+  position: relative;
+}
+
+.bg-woodgrain-opacity::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/woodgrain.png');
+  /* Update with correct path */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  /* Set your desired opacity */
+  z-index: -1;
+}
+
+/* KURT WENSMANN PORFOLIO */
+
+.fixed-element {
+  display: none;
+  position: fixed;
+  right: -150px;
+  /* Adjust as needed */
+  top: 50%;
+  /* To center it vertically */
+  transform: translateY(-50%) rotate(270deg);
+  /* Rotate and center */
+  opacity: 0.5;
+  /* Adjust opacity as needed */
+  z-index: 1000;
+  /* To ensure it stays on top of other elements */
+  /*background: rgba(255, 255, 255, 0.5);  Optional: to enhance readability */
+  padding: 5px;
+  /* Optional: for some spacing */
+  font-size: 14px;
+  /* Adjust font size as needed */
 }
 
 /* Add styling for .social-text as needed */
@@ -1293,9 +1376,30 @@ button:focus-visible {
   }
 } */
 
-.hover\:shadow-3xl:hover {
-  --tw-shadow: 0px 0px .75rem .75rem #6530504c;
-  --tw-shadow-colored: 0px 0px .75rem .75rem var(--tw-shadow-color);
+.hover\:border-walnutDark:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(58 36 23 / var(--tw-border-opacity));
+}
+
+.hover\:text-accent:hover {
+  --tw-text-opacity: 1;
+  color: rgb(46 139 87 / var(--tw-text-opacity));
+}
+
+.hover\:shadow-xl:hover {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.active\:text-white:active {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.active\:shadow-inner:active {
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1320,14 +1424,6 @@ button:focus-visible {
     display: block;
   }
 
-  .sm\:h-20 {
-    height: 5rem;
-  }
-
-  .sm\:w-20 {
-    width: 5rem;
-  }
-
   .sm\:min-w-48 {
     min-width: 12rem;
   }
@@ -1338,12 +1434,44 @@ button:focus-visible {
 }
 
 @media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:w-6\/12 {
+    width: 50%;
+  }
+
+  .md\:w-9\/12 {
+    width: 75%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
   .md\:flex-nowrap {
     flex-wrap: nowrap;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
+  .md\:items-end {
+    align-items: flex-end;
   }
 
   .md\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .md\:pr-16 {
+    padding-right: 4rem;
+  }
+
+  .md\:pr-8 {
+    padding-right: 2rem;
   }
 }

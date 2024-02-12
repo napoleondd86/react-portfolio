@@ -3,6 +3,10 @@ import openai from '../images/icons/openai.svg'
 import netlify from '../images/icons/netlify.svg'
 import copilot from '/copilot.svg'
 import vite from '/vite.svg'
+import React, { ForwardedRef } from 'react'
+
+
+
 
 const skills = [
   { imageUrl: openai, text: "OpenAI API", },
@@ -36,9 +40,9 @@ const skills = [
 
 
 
-const SkillsContainer = () => {
+const SkillsContainer = React.forwardRef(({/* future props */}, ref: ForwardedRef<HTMLDivElement>) => {
   return (
-    <div className='py-8 bg-birchLight  w-full '>
+    <div ref={ref} className='py-8 bg-birchLight  w-full '>
       <h2 className=''>My Tool Bag</h2>
       <p className='mt-4 mx-4 md:px-20'>
         I have experience with the following technologies and tools:
@@ -54,7 +58,7 @@ const SkillsContainer = () => {
 
 
   );
-};
+});
 
 
 export default SkillsContainer;

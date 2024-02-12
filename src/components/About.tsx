@@ -11,7 +11,7 @@ const About = () => {
         <img src={Headshot} className='Kurt w-64 h-64 rounded-full mt-8 ' alt="Kurt" />
         <div className='mt-16'>
           <h3 className='text-3xl font-semibold'>My Story</h3>
-          <p className='mt-8 mx-4 '>
+          <p className='mt-8 mx-16 '>
             With 8 years of experience in building and managing a dual-focused business in logistics/transportation and residential construction, leading a team of up to 5 employees, I bring a wealth of practical business acumen and team leadership skills. Recently, I've expanded my expertise by graduating from the University of Minnesota Fullstack Web Development Bootcamp, where I gained hands-on experience in software development, specializing in React, Express, MongoDB, and NodeJS. I am now seeking full stack web development opportunities in a dynamic small team or company, where my unique blend of business insight and technical skills can make a substantial impact.
           </p>
         </div>

@@ -17,20 +17,24 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <main className='splash mt-16 bg-background bg-cover bg-center bg-fixed w-full flex flex-col justify-center items-center'>
+    <main >
+      <div className='splash mt-16 bg-background bg-cover bg-center bg-fixed w-full flex flex-col justify-center items-center'>
+        <Navbar />
+        <Splash >
+          <SocialLinks />
+        </Splash>
+        <About />
+        <Projects />
+        <TechStackContainer />
+        <Services />
+        <Contact />
+        <Footer />
 
-      <Navbar />
-      <Splash >
-        <SocialLinks />
-      </Splash>
-      
-      <About />
-      <Projects />
-      <TechStackContainer />
-      <Services />
-      <Contact />
-      <Footer />
+      </div>
+      <div className="fixed-element md:block">__________________                    KURT WENSMANN PORTFOLIO                 __________________</div>
     </main>
+
+
   )
 }
 

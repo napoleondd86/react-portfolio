@@ -10,19 +10,19 @@ const Navbar = () => {
     <nav className='navbar_container bg-background text-secondaryOrange font-semibold p-6  fixed top-0 w-screen z-50 text-xl shadow-lg'>
       <ul className='flex flex-col sm:flex-row justify-center'>
         <li className='px-2'>
-          <Link className="nav-link p-2" href="/">Home</Link>
+          <Link className="nav-link p-2 hover:text-accent active:shadow-inner" href="/">HOME</Link>
         </li>
         <li className='px-2'>
-          <Link className="nav-link p-2" href="#about">About</Link>
+          <Link className="nav-link p-2 hover:text-accent active:shadow-inner" href="#about">ABOUT</Link>
         </li>
         <li className='px-2'>
-          <Link className="nav-link p-2" href="#services">Services</Link>
+          <Link className="nav-link p-2 hover:text-accent active:shadow-inner" href="#services">SERVICES</Link>
         </li>
         <li className='px-2'>
-          <Link className="nav-link p-2" href="#projects">Projects</Link>
+          <Link className="nav-link p-2 hover:text-accent active:shadow-inner" href="#projects">PROJECTS</Link>
         </li>
         <li className='px-2'>
-          <Link className="nav-link p-2" href="#contact">Contact</Link>
+          <Link className="nav-link p-2 hover:text-accent active:shadow-inner" href="#contact">CONTACT</Link>
         </li>
       </ul>
     </nav>
