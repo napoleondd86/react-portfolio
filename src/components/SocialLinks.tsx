@@ -2,7 +2,7 @@
 
 import { Link } from "react-aria-components";
 import '../animation.css'
-import Sawblade from "../assets/sawblade.svg?react";
+// import Sawblade from "../assets/sawblade.svg?react";
 import React, { ForwardedRef } from 'react'
 // import sawblade from '/sawblade.svg'
 
