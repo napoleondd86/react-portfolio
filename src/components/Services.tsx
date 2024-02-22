@@ -9,7 +9,7 @@ const Services = React.forwardRef(({/* future props */}, ref: ForwardedRef<HTMLD
   const [setRef3, visible3] = useOnscreen({ threshold: 0.1 });
 
   return (
-    <div ref={ref} id="services" className="services_container rounded-3xl  px-4 items-center flex flex-col max-w-7xl mx-16 justify-evenly h-100">
+    <div ref={ref} id="services" className="services_container rounded-3xl  px-4 py-16 items-center flex flex-col max-w-7xl mx-16 justify-evenly h-100">
    
       <h2 className=''>Services</h2>
       <div className=" flex justify-evenly gap-4 m-8 flex-wrap md:flex-nowrap">

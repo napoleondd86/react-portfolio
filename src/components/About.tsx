@@ -5,7 +5,7 @@ const About = () => {
 
 
   return (
-    <div className='bg-birchLight  w-full flex justify-center py-24'>
+    <div className='bg-birchLight  w-full flex justify-center py-16'>
       <section id="about" className='rounded-3xl p-4 justify-center items-center flex flex-col max-w-7xl'>
         <h2>My Story</h2>
         <img src={Headshot} className='Kurt w-64 h-64 rounded-full mt-8 ' alt="Kurt" />
