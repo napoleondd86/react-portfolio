@@ -60,6 +60,7 @@ export default {
         primaryLight:'#F5E9F3',
         birch:'#E9E0B5',
         birchLight:'#F5F1E6',
+        birchExtraLight:'#F7F5E9',
         birchDark:'#C9B38C',
         primaryDark:'#653050',
         secondaryOrange:'#FFA500',
