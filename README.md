@@ -37,3 +37,4 @@ export default {
 - https://iconduck.com/sets/brand-icons-by-aasaam
 Photo by <a href="https://unsplash.com/@theforestbirds?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joel & Jasmin Førestbird</a> on <a href="https://unsplash.com/photos/photo-of-brown-wood-slab-xzPMUMDDsfk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   
+- Jquery by Icon Mafia on IconScout
