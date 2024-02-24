@@ -5,6 +5,7 @@ import copilot from '/copilot.svg'
 import vite from '/vite.svg'
 import React, { ForwardedRef } from 'react'
 
+
 import tailwind from '/tailwindcss.svg'
 
 
@@ -14,6 +15,7 @@ const skills = [
   { imageUrl: openai, text: "OpenAI API", },
   { imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", text: "React", },
   { imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", text: "MongoDB", },
+  { imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg", text: "Mongoose", },
   { imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg", text: "NodeJS", },
   { imageUrl: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg", text: "Express", },
   { imageUrl: copilot, text: "GitHub Copilot", },
@@ -38,6 +40,7 @@ const skills = [
   { imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg", text: "NPM", },
   { imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg", text: "GraphQL", },
   { imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg", text: "Jest", },
+  { imageUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg", text: "Figma", },
 ];
 
 
