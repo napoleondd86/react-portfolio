@@ -29,7 +29,7 @@ const Contact = React.forwardRef(({ }, ref: ForwardedRef<HTMLDivElement>) => {
     }
 
     return (
-        <div ref={ref} className=" grid items-center justify-center bg-birchLight w-full  pt-16 ">
+        <div ref={ref} className=" grid items-center justify-center bg-walnutDark text-birch w-full pt-40 ">
             <div className='max-w-7xl'>
                 <h2>Contact</h2>
                 <div className='mt-8 gap-4 flex flex-col md:items-start p-4 w-full md:w-9/12 w-max-3xl'>
@@ -39,10 +39,10 @@ const Contact = React.forwardRef(({ }, ref: ForwardedRef<HTMLDivElement>) => {
                 <div className='flex flex-col md:flex-row'>
                     <section id="contact" className="p-4 justify-center items-center flex md:w-6/12 gap-4">
                         <form className="contact-form flex flex-col gap-8 w-full" onSubmit={sendEmail}>
-                            <input className='rounded-lg' type="text" name="user_name" id='user_name' placeholder='Name' />
-                            <input className='rounded-lg' type="email" name="reply_to" id='reply_to' placeholder='Email'/>
-                            <textarea className='rounded-lg' name="message" id='message' placeholder='Message' rows={10} />
-                            <input className='rounded-lg border-2 bg-walnutLight hover:border-walnutDark active:text-white' type="submit" value="Send" />
+                            <input className='rounded-lg text-black focus:border-secondaryOrange focus:border-4' type="text" name="user_name" id='user_name' placeholder='Name' />
+                            <input className='rounded-lg text-black focus:border-secondaryOrange focus:border-4' type="email" name="reply_to" id='reply_to' placeholder='Email'/>
+                            <textarea className='rounded-lg bg-background text-black focus:border-secondaryOrange focus:border-4' name="message" id='message' placeholder='Message' rows={10} />
+                            <input className='rounded-lg border-2 border-secondaryOrange bg-walnutLight hover:border-walnutDark active:text-white' type="submit" value="Send" />
                         </form>
                         <div>{result}</div>
                     </section>
@@ -53,7 +53,7 @@ const Contact = React.forwardRef(({ }, ref: ForwardedRef<HTMLDivElement>) => {
                         </div>
                         <div className='flex flex-col  md:items-end  gap-4'>
                             <h3 className='text-3xl font-semibold mb-4 md:pr-8'>Socials</h3>
-                            <SocialLinks />
+                            <SocialLinks className="text-secondaryOrange"/>
                         </div>
                     </div>
                 </div>
