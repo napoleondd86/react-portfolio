@@ -5,7 +5,6 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import Footer from './components/Footer.tsx'
-import Navbar from './components/Navbar.tsx'
 import Splash from './components/Splash.tsx'
 import About from './components/About.tsx'
 import Projects from './components/Projects.tsx'

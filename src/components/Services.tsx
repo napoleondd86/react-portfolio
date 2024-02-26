@@ -3,7 +3,7 @@
 import '../animation.css'
 import React, { ForwardedRef } from 'react'
 import useOnscreen from '../hooks/useOnScreen';
-import BackendIcon from '../assets/backend.svg?react'
+// import BackendIcon from '../assets/backend.svg?react'
 // import AiIcon from '../assets/ai-icon2.png?react'
 const Services = React.forwardRef(({/* future props */ }, ref: ForwardedRef<HTMLDivElement>) => {
 
