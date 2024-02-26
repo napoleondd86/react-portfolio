@@ -47,7 +47,7 @@ const skills = [
 
 const SkillsContainer = React.forwardRef(({/* future props */}, ref: ForwardedRef<HTMLDivElement>) => {
   return (
-    <div ref={ref} className='py-16 bg-birchLight  w-full '>
+    <div ref={ref} className='py-16 bg-birchLight w-full '>
       <h2 className=''>My Tool Bag</h2>
       <p className='mt-4 mx-4 md:px-20'>
         I have experience with the following technologies and tools:

@@ -12,7 +12,7 @@ const Services = React.forwardRef(({/* future props */ }, ref: ForwardedRef<HTML
   const [setRef3, visible3] = useOnscreen({ threshold: 0.1 });
 
   return (
-    <div className='w-full bg-birchLight grid justify-center'>
+    <div className='w-full bg-birchLight grid justify-center pb-48'>
     <section ref={ref} id="services" className="services_container px-4 py-16 items-center flex flex-col max-w-7xl lg:px-20 justify-evenly h-100 bg-birchLight">
 
       <h2 className=''>Services</h2>

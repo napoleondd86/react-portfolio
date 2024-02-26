@@ -14,9 +14,9 @@ const Projects = React.forwardRef(({/* future props */ }, ref: ForwardedRef<HTML
     <div className='w-full bg-birchLight grid justify-center'>
       <section ref={ref} id="projects" className="p-4 md:p-8 justify-center items-center flex flex-col max-w-7xl py-16 lg:px-20">
 
-        <h2>Currently <span className='text-5xl font-bold text-accent '>Building</span> and past <span className='text-5xl text-accent font-bold '>Builds</span></h2>
+        <h2>Currently <span className='text-5xl font-bold text-accent '>Building</span> and past <span className='text-5xl font-bold '>Builds</span></h2>
         <div className="projects_container flex flex-row flex-wrap justify-evenly gap-12 mt-16" >
-          <div className="project_card h-auto grid md:grid-cols-2 lg:grid-cols-[60%_40%] xs:p-4 bg-white rounded-3xl   transition-transform duration-500 shadow-xl ">
+          <div className="project_card border-2 border-accent h-auto grid md:grid-cols-2 lg:grid-cols-[60%_40%] xs:p-4 bg-white rounded-3xl   transition-transform duration-500 shadow-xl ">
             <div className='grid gap-2 p-4 text-left '>
               <div className='w-full flex items-center justify-between'>
                 <h3 className='text-xl text-secondaryOrange font-bold'>Upward Arc</h3>
@@ -53,7 +53,7 @@ const Projects = React.forwardRef(({/* future props */ }, ref: ForwardedRef<HTML
               </div>
             </Link>
           </div>
-          <div className="project_card h-auto grid md:grid-cols-2 lg:grid-cols-[60%_40%] p-4 bg-white rounded-3xl   transition-transform duration-500 shadow-xl ">
+          <div className="project_card border-2 border-secondaryOrange h-auto grid md:grid-cols-2 lg:grid-cols-[60%_40%] p-4 bg-white rounded-3xl   transition-transform duration-500 shadow-xl ">
             <div className='grid gap-2 p-4 text-left '>
               <div className='w-full flex items-center justify-between'>
                 <h3 className='text-xl text-secondaryOrange font-bold'>Unblurred</h3>
@@ -84,7 +84,7 @@ const Projects = React.forwardRef(({/* future props */ }, ref: ForwardedRef<HTML
               </div>
             </div>
             <Link href="https://unblurred-527419df040d.herokuapp.com/" className="project_link relative flex xs:brightness-75 xs:contrast-125 hover:brightness-100 hover:contrast-100 transition-transform duration-300 group items-center justify-center p-4 rounded-3xl" target="_blank" rel="noopener noreferrer">
-              <img className='rounded-3xl xs:group-hover:scale-105 md:group-hover:scale-105 transition-transform duration-500' src="/logo1.svg" alt="Upward Arc Homepage" />
+              <img className='rounded-3xl xs:group-hover:scale-105 md:group-hover:scale-105 transition-transform duration-500 bg-gray-900' src="/logo3.png" alt="Upward Arc Homepage" />
               <div className="absolute inset-0 flex justify-center items-center xs:opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
                 <div className="flex justify-center items-center bg-black bg-opacity-50 text-background font-bold text-sm rounded-full w-24 h-24 flex-col">
                   View Site
@@ -92,7 +92,7 @@ const Projects = React.forwardRef(({/* future props */ }, ref: ForwardedRef<HTML
               </div>
             </Link>
           </div>
-          <div className="project_card h-auto grid md:grid-cols-2 lg:grid-cols-[60%_40%] p-4 bg-white rounded-3xl   transition-transform duration-500 shadow-xl ">
+          <div className="project_card border-2 border-secondaryOrange h-auto grid md:grid-cols-2 lg:grid-cols-[60%_40%] p-4 bg-white rounded-3xl   transition-transform duration-500 shadow-xl ">
             <div className='grid gap-2 p-4 text-left '>
               <div className='w-full flex items-center justify-between'>
                 <h3 className='text-xl text-secondaryOrange font-bold'>Robo Murder Mystery</h3>
@@ -126,7 +126,7 @@ const Projects = React.forwardRef(({/* future props */ }, ref: ForwardedRef<HTML
               </div>
             </Link>
           </div>
-          <div className="project_card h-auto grid md:grid-cols-2 lg:grid-cols-[60%_40%] p-4 bg-white rounded-3xl   transition-transform duration-500 shadow-xl ">
+          <div className="project_card border-2 border-secondaryOrange h-auto grid md:grid-cols-2 lg:grid-cols-[60%_40%] p-4 bg-white rounded-3xl   transition-transform duration-500 shadow-xl ">
             <div className='grid gap-2 p-4 text-left '>
               <div className='w-full flex items-center justify-between'>
                 <h3 className='text-xl text-secondaryOrange font-bold'>Tech Blog</h3>

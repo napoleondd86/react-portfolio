@@ -29,7 +29,7 @@ const Contact = React.forwardRef(({ }, ref: ForwardedRef<HTMLDivElement>) => {
     }
 
     return (
-        <div ref={ref} className=" grid items-center justify-center bg-walnutDark text-birch w-full pt-40 ">
+        <div ref={ref} className=" grid items-center justify-center bg-walnutDark text-birch w-full pt-20 ">
             <div className='max-w-7xl'>
                 <h2>Contact</h2>
                 <div className='mt-8 gap-4 flex flex-col md:items-start p-4 w-full md:w-9/12 w-max-3xl'>
@@ -41,7 +41,7 @@ const Contact = React.forwardRef(({ }, ref: ForwardedRef<HTMLDivElement>) => {
                         <form className="contact-form flex flex-col gap-8 w-full" onSubmit={sendEmail}>
                             <input className='rounded-lg text-black focus:border-secondaryOrange focus:border-4' type="text" name="user_name" id='user_name' placeholder='Name' />
                             <input className='rounded-lg text-black focus:border-secondaryOrange focus:border-4' type="email" name="reply_to" id='reply_to' placeholder='Email'/>
-                            <textarea className='rounded-lg bg-background text-black focus:border-secondaryOrange focus:border-4' name="message" id='message' placeholder='Message' rows={10} />
+                            <textarea className='rounded-lg bg-background text-black focus:border-secondaryOrange focus:border-4' name="message" id='message' placeholder='Message' rows={8} />
                             <input className='rounded-lg border-2 border-secondaryOrange bg-walnutLight hover:border-walnutDark active:text-white' type="submit" value="Send" />
                         </form>
                         <div>{result}</div>
