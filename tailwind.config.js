@@ -4,6 +4,9 @@ export default {
   "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        'xs': '475px',
+      },
       boxShadow: {
         '3xl': '0px 0px .75rem .75rem #6530504c',
       },
