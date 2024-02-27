@@ -11,7 +11,7 @@ import FigmaIcon from '../assets/figma.svg?react'
 
 const Projects = React.forwardRef(({/* future props */ }, ref: ForwardedRef<HTMLDivElement>) => {
   return (
-    <div className='w-full bg-birchLight grid justify-center'>
+    <div className='w-full bg-birchLight grid justify-center pt-16'>
       <section ref={ref} id="projects" className="p-4 md:p-8 justify-center items-center flex flex-col max-w-7xl py-16 lg:px-20">
 
         <h2>Currently <span className='text-5xl font-bold text-accent '>Building</span> and past <span className='text-5xl font-bold '>Builds</span></h2>
@@ -19,7 +19,7 @@ const Projects = React.forwardRef(({/* future props */ }, ref: ForwardedRef<HTML
           <div className="project_card border-2 border-accent h-auto grid md:grid-cols-2 lg:grid-cols-[60%_40%] xs:p-4 bg-white rounded-3xl   transition-transform duration-500 shadow-xl ">
             <div className='grid gap-2 p-4 text-left '>
               <div className='w-full flex items-center justify-between'>
-                <h3 className='text-xl text-secondaryOrange font-bold'>Upward Arc</h3>
+                <h3 className='text-xl text-accent font-bold'>Upward Arc</h3>
                 <Link href="https://github.com/Osorkon21/step-by-step-app" className="project_link px-2 flex items-center gap-2 hover:text-accent hover:scale-95 transition-transform rounded-lg" target="_blank" rel="noopener noreferrer">
                   <div>Github </div>
                   <GithubIcon className='h-10 w-10 ' />
