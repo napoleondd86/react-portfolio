@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const NavbarCollapsible = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -18,10 +19,10 @@ const NavbarCollapsible = () => {
     </div>
 
     <div id='navbar' className={`${isOpen ? "visible opacity-100 " : "invisible opacity-0"} z-40 fixed top-0 w-full h-full bg-birchLight text-accent text-5xl gap-4 flex flex-col justify-center items-center transition-opacity ease-in-out duration-500`}>
-      <a className='hover:text-secondaryOrange' href="#" onClick={closeNavbar}>Home</a>
-      <a className='hover:text-secondaryOrange' href="#" onClick={closeNavbar}>About</a>
-      <a className='hover:text-secondaryOrange' href="#projects" onClick={closeNavbar}>Projects</a>
-      <a className='hover:text-secondaryOrange' href="#contact" onClick={closeNavbar}>Contact</a>
+      <Link className='hover:text-secondaryOrange' to="/" onClick={closeNavbar}>Home</Link>
+      <Link className='hover:text-secondaryOrange' to="/about" onClick={closeNavbar}>About</Link>
+      <Link className='hover:text-secondaryOrange' to="/projects" onClick={closeNavbar}>Projects </Link>
+      <Link className='hover:text-secondaryOrange' to="/contact" onClick={closeNavbar}>Contact</Link>
     </div>
     </>
   )
