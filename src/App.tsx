@@ -1,19 +1,11 @@
 
-// import {  useState } from 'react' // Children
 
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import './App.css'
 import Footer from './components/Footer.tsx'
-// import Splash from './components/Splash.tsx'
 import About from './components/About.tsx'
-// import Projects from './components/Projects.tsx'
-// import Contact from './components/Contact.tsx'
-// import SocialLinks from './components/SocialLinks.tsx'
-// import Services from './components/Services.tsx'
-// import TechStackContainer from './components/TechStackContainer.tsx'
+import ScrollToTop from './components/ScrollToTop.tsx'
 import NavbarCollapsible from './components/NavbarCollapsible.tsx'
 import Homepage from './components/Homepage.tsx'
 function App() {
@@ -22,6 +14,7 @@ function App() {
   return (
     <main >
       <BrowserRouter>
+        <ScrollToTop />
         <NavbarCollapsible />
         <Routes>
           <Route path="/" element={<Homepage />} />
