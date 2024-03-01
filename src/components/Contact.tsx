@@ -29,7 +29,7 @@ const Contact = React.forwardRef(({ }, ref: ForwardedRef<HTMLDivElement>) => {
     }
 
     return (
-        <div ref={ref} className=" grid items-center justify-center bg-walnutDark text-birch w-full pt-20 ">
+        <div id="contact" ref={ref} className=" grid items-center justify-center bg-walnutDark text-birch w-full pt-20 ">
             <div className='max-w-7xl'>
                 <h2>Contact</h2>
                 <div className='mt-8 gap-4 flex flex-col md:items-start p-4 w-full md:w-9/12 w-max-3xl'>
