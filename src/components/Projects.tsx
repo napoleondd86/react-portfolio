@@ -11,8 +11,8 @@ import FigmaIcon from '../assets/figma.svg?react'
 
 const Projects = React.forwardRef(({/* future props */ }, ref: ForwardedRef<HTMLDivElement>) => {
   return (
-    <div className='w-full bg-birchLight grid justify-center pt-16'>
-      <section ref={ref} id="projects" className="p-4 md:p-8 justify-center items-center flex flex-col max-w-7xl py-16 lg:px-20">
+    <div id="projects" className='w-full bg-birchLight grid justify-center pt-16'>
+      <section ref={ref}  className="p-4 md:p-8 justify-center items-center flex flex-col max-w-7xl py-16 lg:px-20">
 
         <h2>Currently <span className='text-5xl font-bold text-accent '>Building</span> and past <span className='text-5xl font-bold '>Builds</span></h2>
         <div className="projects_container flex flex-row flex-wrap justify-evenly gap-12 mt-16" >
